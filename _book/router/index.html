@@ -1,0 +1,655 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>路由 · admin-doc</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="harlan">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../menu/" />
+    
+    
+    <link rel="prev" href="../projectConfigurationItems/" />
+    
+
+    
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"liuya6","repo":"admin-template","size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../start/">
+            
+                <a href="../start/">
+            
+                    
+                    开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../projectConfigurationItems/">
+            
+                <a href="../projectConfigurationItems/">
+            
+                    
+                    项目配置项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../menu/">
+            
+                <a href="../menu/">
+            
+                    
+                    菜单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../authority/">
+            
+                <a href="../authority/">
+            
+                    
+                    权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../style/">
+            
+                <a href="../style/">
+            
+                    
+                    样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../components/">
+            
+                <a href="../components/">
+            
+                    
+                    组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../components/global/">
+            
+                <a href="../components/global/">
+            
+                    
+                    全局组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../components/commonly/">
+            
+                <a href="../components/commonly/">
+            
+                    
+                    常用组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >路由</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#&#x8DEF;&#x7531;"><b></b>&#x8DEF;&#x7531;</a></li><li><span class="title-icon "></span><a href="#&#x591A;&#x7EA7;&#x8DEF;&#x7531;"><b></b>&#x591A;&#x7EA7;&#x8DEF;&#x7531;</a></li><li><span class="title-icon "></span><a href="#&#x5916;&#x90E8;&#x9875;&#x9762;&#x5D4C;&#x5957;"><b></b>&#x5916;&#x90E8;&#x9875;&#x9762;&#x5D4C;&#x5957;</a></li><li><span class="title-icon "></span><a href="#&#x5916;&#x94FE;"><b></b>&#x5916;&#x94FE;</a></li><li><span class="title-icon "></span><a href="#&#x65B0;&#x589E;&#x8DEF;&#x7531;"><b></b>&#x65B0;&#x589E;&#x8DEF;&#x7531;</a></li><li><span class="title-icon "></span><a href="#&#x8DEF;&#x7531;&#x5237;&#x65B0;"><b></b>&#x8DEF;&#x7531;&#x5237;&#x65B0;</a></li><li><span class="title-icon "></span><a href="#redirect"><b></b>Redirect</a></li><li><span class="title-icon "></span><a href="#&#x9875;&#x9762;&#x8DF3;&#x8F6C;"><b></b>&#x9875;&#x9762;&#x8DF3;&#x8F6C;</a></li><li><span class="title-icon "></span><a href="#&#x5982;&#x4F55;&#x5F00;&#x542F;&#x9875;&#x9762;&#x7F13;&#x5B58;"><b></b>&#x5982;&#x4F55;&#x5F00;&#x542F;&#x9875;&#x9762;&#x7F13;&#x5B58;</a></li><li><span class="title-icon "></span><a href="#&#x5982;&#x4F55;&#x66F4;&#x6539;&#x9996;&#x9875;&#x8DEF;&#x7531;"><b></b>&#x5982;&#x4F55;&#x66F4;&#x6539;&#x9996;&#x9875;&#x8DEF;&#x7531;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h3 id="&#x8DEF;&#x7531;"><a name="&#x8DEF;&#x7531;" class="anchor-navigation-ex-anchor" href="#&#x8DEF;&#x7531;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8DEF;&#x7531;" class="plugin-anchor" href="#&#x8DEF;&#x7531;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8DEF;&#x7531;</h3>
+<p>&#x9879;&#x76EE;&#x8DEF;&#x7531;&#x914D;&#x7F6E;&#x5B58;&#x653E;&#x4E8E; <code>src/router/routes</code> &#x4E0B;&#x9762;&#x3002; <code>src/router/routes/modules</code>&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x8DEF;&#x7531;&#x6A21;&#x5757;&#xFF0C;&#x5728;&#x8BE5;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x4F1A;&#x81EA;&#x52A8;&#x6CE8;&#x518C;&#x3002;</p>
+<h6 id="&#x6A21;&#x5757;&#x8BF4;&#x660E;"><a name="&#x6A21;&#x5757;&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x5757;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6A21;&#x5757;&#x8BF4;&#x660E;" class="plugin-anchor" href="#&#x6A21;&#x5757;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6A21;&#x5757;&#x8BF4;&#x660E;</h6>
+<p>&#x5728; <code>src/router/routes/modules</code> &#x5185;&#x7684; .ts &#x6587;&#x4EF6;&#x4F1A;&#x88AB;&#x89C6;&#x4E3A;&#x4E00;&#x4E2A;&#x8DEF;&#x7531;&#x6A21;&#x5757;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x8DEF;&#x7531;&#x6A21;&#x5757;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x7ED3;&#x6784;</p>
+<pre><code>import type { AppRouteModule } from &apos;/@/router/types&apos;;
+
+import { LAYOUT } from &apos;/@/router/constant&apos;;
+import { t } from &apos;/@/hooks/web/useI18n&apos;;
+
+const dashboard: AppRouteModule = {
+  path: &apos;/dashboard&apos;,
+  name: &apos;Dashboard&apos;,
+  component: LAYOUT,
+  redirect: &apos;/dashboard/analysis&apos;,
+  meta: {
+    icon: &apos;ion:grid-outline&apos;,
+    title: t(&apos;routes.dashboard.dashboard&apos;),
+  },
+  children: [
+    {
+      path: &apos;analysis&apos;,
+      name: &apos;Analysis&apos;,
+      component: () =&gt; import(&apos;/@/views/dashboard/analysis/index.vue&apos;),
+      meta: {
+        affix: true,
+        title: t(&apos;routes.dashboard.analysis&apos;),
+      },
+    },
+    {
+      path: &apos;workbench&apos;,
+      name: &apos;Workbench&apos;,
+      component: () =&gt; import(&apos;/@/views/dashboard/workbench/index.vue&apos;),
+      meta: {
+        title: t(&apos;routes.dashboard.workbench&apos;),
+      },
+    },
+  ],
+};
+export default dashboard;
+</code></pre><h3 id="&#x591A;&#x7EA7;&#x8DEF;&#x7531;"><a name="&#x591A;&#x7EA7;&#x8DEF;&#x7531;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x7EA7;&#x8DEF;&#x7531;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x591A;&#x7EA7;&#x8DEF;&#x7531;" class="plugin-anchor" href="#&#x591A;&#x7EA7;&#x8DEF;&#x7531;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x591A;&#x7EA7;&#x8DEF;&#x7531;</h3>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</p>
+<ol>
+<li>&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x6240;&#x6709;&#x8DEF;&#x7531; name &#x4E0D;&#x80FD;&#x91CD;&#x590D;</li>
+<li>&#x6240;&#x6709;&#x7684;&#x591A;&#x7EA7;&#x8DEF;&#x7531;&#x6700;&#x7EC8;&#x90FD;&#x4F1A;&#x8F6C;&#x6210;&#x4E8C;&#x7EA7;&#x8DEF;&#x7531;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x5185;&#x5D4C;&#x5B50;&#x8DEF;&#x7531;</li>
+<li>&#x9664;&#x4E86; layout &#x5BF9;&#x5E94;&#x7684; path &#x524D;&#x9762;&#x9700;&#x8981;&#x52A0; /&#xFF0C;&#x5176;&#x4F59;&#x5B50;&#x8DEF;&#x7531;&#x90FD;&#x4E0D;&#x8981;&#x4EE5;/&#x5F00;&#x5934;</li>
+</ol>
+</blockquote>
+<p>&#x793A;&#x4F8B;</p>
+<pre><code>import type { AppRouteModule } from &apos;/@/router/types&apos;;
+import { getParentLayout, LAYOUT } from &apos;/@/router/constant&apos;;
+import { t } from &apos;/@/hooks/web/useI18n&apos;;
+const permission: AppRouteModule = {
+  path: &apos;/level&apos;,
+  name: &apos;Level&apos;,
+  component: LAYOUT,
+  redirect: &apos;/level/menu1/menu1-1/menu1-1-1&apos;,
+  meta: {
+    icon: &apos;ion:menu-outline&apos;,
+    title: t(&apos;routes.demo.level.level&apos;),
+  },
+
+  children: [
+    {
+      path: &apos;tabs/:id&apos;, 
+      name: &apos;TabsParams&apos;,
+      component: getParentLayout(&apos;TabsParams&apos;),
+      meta: {
+        carryParam: true,
+        hidePathForChildren: true, // &#x672C;&#x7EA7;path&#x5C06;&#x4F1A;&#x5728;&#x5B50;&#x7EA7;&#x83DC;&#x5355;&#x4E2D;&#x5408;&#x6210;&#x5B8C;&#x6574;path&#x65F6;&#x4F1A;&#x5FFD;&#x7565;&#x8FD9;&#x4E00;&#x5C42;&#x7EA7;
+      },
+      children: [
+        path: &apos;tabs/id1&apos;, // &#x5176;&#x4E0A;&#x7EA7;&#x6709;&#x6807;&#x8BB0;hidePathForChildren&#xFF0C;&#x6240;&#x4EE5;&#x672C;&#x7EA7;&#x5728;&#x751F;&#x6210;&#x83DC;&#x5355;&#x65F6;&#x6700;&#x7EC8;&#x7684;path&#x4E3A;  /level/tabs/id1
+        name: &apos;TabsParams&apos;,
+        component: getParentLayout(&apos;TabsParams&apos;),
+        meta: {
+          carryParam: true,
+          ignoreRoute: true,  // &#x672C;&#x8DEF;&#x7531;&#x4EC5;&#x7528;&#x4E8E;&#x83DC;&#x5355;&#x751F;&#x6210;&#xFF0C;&#x4E0D;&#x4F1A;&#x5728;&#x5B9E;&#x9645;&#x7684;&#x8DEF;&#x7531;&#x8868;&#x4E2D;&#x51FA;&#x73B0;
+        },
+      ]
+    },
+    {
+      path: &apos;menu1&apos;,
+      name: &apos;Menu1Demo&apos;,
+      component: getParentLayout(&apos;Menu1Demo&apos;),
+      meta: {
+        title: &apos;Menu1&apos;,
+      },
+      redirect: &apos;/level/menu1/menu1-1/menu1-1-1&apos;,
+      children: [
+        {
+          path: &apos;menu1-1&apos;,
+          name: &apos;Menu11Demo&apos;,
+          component: getParentLayout(&apos;Menu11Demo&apos;),
+          meta: {
+            title: &apos;Menu1-1&apos;,
+          },
+          redirect: &apos;/level/menu1/menu1-1/menu1-1-1&apos;,
+          children: [
+            {
+              path: &apos;menu1-1-1&apos;,
+              name: &apos;Menu111Demo&apos;,
+              component: () =&gt; import(&apos;/@/views/demo/level/Menu111.vue&apos;),
+              meta: {
+                title: &apos;Menu111&apos;,
+              },
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+export default permission;
+</code></pre><h3 id="&#x5916;&#x90E8;&#x9875;&#x9762;&#x5D4C;&#x5957;"><a name="&#x5916;&#x90E8;&#x9875;&#x9762;&#x5D4C;&#x5957;" class="anchor-navigation-ex-anchor" href="#&#x5916;&#x90E8;&#x9875;&#x9762;&#x5D4C;&#x5957;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5916;&#x90E8;&#x9875;&#x9762;&#x5D4C;&#x5957;" class="plugin-anchor" href="#&#x5916;&#x90E8;&#x9875;&#x9762;&#x5D4C;&#x5957;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5916;&#x90E8;&#x9875;&#x9762;&#x5D4C;&#x5957;</h3>
+<p>&#x53EA;&#x9700;&#x8981;&#x5C06; <code>frameSrc</code> &#x8BBE;&#x7F6E;&#x4E3A;&#x9700;&#x8981;&#x8DF3;&#x8F6C;&#x7684;&#x5730;&#x5740;&#x5373;&#x53EF;</p>
+<pre><code>const IFrame = () =&gt; import(&apos;/@/views/sys/iframe/FrameBlank.vue&apos;);
+{
+  path: &apos;doc&apos;,
+  name: &apos;Doc&apos;,
+  component: IFrame,
+  meta: {
+    frameSrc: &apos;https://vvbin.cn/doc-next/&apos;,
+    title: t(&apos;routes.demo.iframe.doc&apos;),
+  },
+}
+</code></pre><h3 id="&#x5916;&#x94FE;"><a name="&#x5916;&#x94FE;" class="anchor-navigation-ex-anchor" href="#&#x5916;&#x94FE;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5916;&#x94FE;" class="plugin-anchor" href="#&#x5916;&#x94FE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5916;&#x94FE;</h3>
+<p>&#x53EA;&#x9700;&#x8981;&#x5C06; <code>path</code> &#x8BBE;&#x7F6E;&#x4E3A;&#x9700;&#x8981;&#x8DF3;&#x8F6C;&#x7684;<strong>HTTP&#x5730;&#x5740;</strong>&#x5373;&#x53EF;</p>
+<pre><code>{
+  path: &apos;https://vvbin.cn/doc-next/&apos;,
+  name: &apos;DocExternal&apos;,
+  component: IFrame,
+  meta: {
+    title: t(&apos;routes.demo.iframe.docExternal&apos;),
+  },
+}
+</code></pre><h3 id="&#x65B0;&#x589E;&#x8DEF;&#x7531;"><a name="&#x65B0;&#x589E;&#x8DEF;&#x7531;" class="anchor-navigation-ex-anchor" href="#&#x65B0;&#x589E;&#x8DEF;&#x7531;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x65B0;&#x589E;&#x8DEF;&#x7531;" class="plugin-anchor" href="#&#x65B0;&#x589E;&#x8DEF;&#x7531;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B0;&#x589E;&#x8DEF;&#x7531;</h3>
+<p>&#x5728; <code>src/router/routes/modules</code> &#x5185;&#x65B0;&#x589E;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x6587;&#x4EF6;&#x3002;
+&#x793A;&#x4F8B;&#xFF0C;&#x65B0;&#x589E; test.ts &#x6587;&#x4EF6;</p>
+<pre><code>import type { AppRouteModule } from &apos;/@/router/types&apos;;
+import { LAYOUT } from &apos;/@/router/constant&apos;;
+import { t } from &apos;/@/hooks/web/useI18n&apos;;
+
+const dashboard: AppRouteModule = {
+  path: &apos;/about&apos;,
+  name: &apos;About&apos;,
+  component: LAYOUT,
+  redirect: &apos;/about/index&apos;,
+  meta: {
+    icon: &apos;simple-icons:about-dot-me&apos;,
+    title: t(&apos;routes.dashboard.about&apos;),
+  },
+  children: [
+    {
+      path: &apos;index&apos;,
+      name: &apos;AboutPage&apos;,
+      component: () =&gt; import(&apos;/@/views/sys/about/index.vue&apos;),
+      meta: {
+        title: t(&apos;routes.dashboard.about&apos;),
+        icon: &apos;simple-icons:about-dot-me&apos;,
+      },
+    },
+  ],
+};
+
+export default dashboard;
+</code></pre><p>&#x6B64;&#x65F6;&#x8DEF;&#x7531;&#x5DF2;&#x6DFB;&#x52A0;&#x5B8C;&#x6210;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x624B;&#x52A8;&#x5F15;&#x5165;&#xFF0C;&#x653E;&#x5728;<code>src/router/routes/modules</code> &#x5185;&#x7684;&#x6587;&#x4EF6;&#x4F1A;&#x81EA;&#x52A8;&#x88AB;&#x52A0;&#x8F7D;&#x3002;</p>
+<h3 id="&#x8DEF;&#x7531;&#x5237;&#x65B0;"><a name="&#x8DEF;&#x7531;&#x5237;&#x65B0;" class="anchor-navigation-ex-anchor" href="#&#x8DEF;&#x7531;&#x5237;&#x65B0;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8DEF;&#x7531;&#x5237;&#x65B0;" class="plugin-anchor" href="#&#x8DEF;&#x7531;&#x5237;&#x65B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8DEF;&#x7531;&#x5237;&#x65B0;</h3>
+<p>&#x91C7;&#x7528;&#x7684;&#x662F;<strong>&#x91CD;&#x5B9A;&#x5411;</strong>&#x65B9;&#x5F0F;<br>
+&#x5B9E;&#x73B0;:</p>
+<pre><code>import { useRedo } from &apos;/@/hooks/web/usePage&apos;;
+import { defineComponent } from &apos;vue&apos;;
+export default defineComponent({
+  setup() {
+    const redo = useRedo();
+    // &#x6267;&#x884C;&#x5237;&#x65B0;
+    redo();
+    return {};
+  },
+});
+</code></pre><h3 id="redirect"><a name="redirect" class="anchor-navigation-ex-anchor" href="#redirect"><i class="fa fa-link" aria-hidden="true"></i></a><a name="redirect" class="plugin-anchor" href="#redirect"><i class="fa fa-link" aria-hidden="true"></i></a>Redirect</h3>
+<p>&#x67E5;&#x770B;<code>src/views/sys/redirect/index.vue</code></p>
+<pre><code>import { defineComponent, unref } from &apos;vue&apos;;
+import { useRouter } from &apos;vue-router&apos;;
+export default defineComponent({
+  name: &apos;Redirect&apos;,
+  setup() {
+    const { currentRoute, replace } = useRouter();
+    const { params, query } = unref(currentRoute);
+    const { path } = params;
+    const _path = Array.isArray(path) ? path.join(&apos;/&apos;) : path;
+    replace({
+      path: &apos;/&apos; + _path,
+      query,
+    });
+    return {};
+  },
+});
+</code></pre><h3 id="&#x9875;&#x9762;&#x8DF3;&#x8F6C;"><a name="&#x9875;&#x9762;&#x8DF3;&#x8F6C;" class="anchor-navigation-ex-anchor" href="#&#x9875;&#x9762;&#x8DF3;&#x8F6C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x9875;&#x9762;&#x8DF3;&#x8F6C;" class="plugin-anchor" href="#&#x9875;&#x9762;&#x8DF3;&#x8F6C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9875;&#x9762;&#x8DF3;&#x8F6C;</h3>
+<p>&#x9875;&#x9762;&#x8DF3;&#x8F6C;&#x5EFA;&#x8BAE;&#x91C7;&#x7528;&#x9879;&#x76EE;&#x63D0;&#x4F9B;&#x7684; useGo
+&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code>import { useGo } from &apos;/@/hooks/web/usePage&apos;;
+import { defineComponent } from &apos;vue&apos;;
+export default defineComponent({
+  setup() {
+    const go = useGo();
+
+    // &#x6267;&#x884C;&#x5237;&#x65B0;
+    go();
+    go(PageEnum.Home);
+    return {};
+  },
+});
+</code></pre><h3 id="&#x5982;&#x4F55;&#x5F00;&#x542F;&#x9875;&#x9762;&#x7F13;&#x5B58;"><a name="&#x5982;&#x4F55;&#x5F00;&#x542F;&#x9875;&#x9762;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x4F55;&#x5F00;&#x542F;&#x9875;&#x9762;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5982;&#x4F55;&#x5F00;&#x542F;&#x9875;&#x9762;&#x7F13;&#x5B58;" class="plugin-anchor" href="#&#x5982;&#x4F55;&#x5F00;&#x542F;&#x9875;&#x9762;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5982;&#x4F55;&#x5F00;&#x542F;&#x9875;&#x9762;&#x7F13;&#x5B58;</h3>
+<p>&#x5F00;&#x542F;&#x7F13;&#x5B58;&#x6709; 3 &#x4E2A;&#x6761;&#x4EF6;</p>
+<ol>
+<li>&#x5728; <code>src/settings/projectSetting.ts</code> &#x5185;&#x5C06;<code>openKeepAlive</code> &#x8BBE;&#x7F6E;&#x4E3A; <code>true</code></li>
+<li>&#x8DEF;&#x7531;&#x8BBE;&#x7F6E; <code>name</code>&#xFF0C;&#x4E14;&#x4E0D;&#x80FD;&#x91CD;&#x590D;</li>
+<li>&#x8DEF;&#x7531;&#x5BF9;&#x5E94;&#x7684;&#x7EC4;&#x4EF6;&#x52A0;&#x4E0A; <code>name</code>&#xFF0C;&#x4E0E;&#x8DEF;&#x7531;&#x8BBE;&#x7F6E;&#x7684; <code>name</code> &#x4FDD;&#x6301;&#x4E00;&#x81F4;</li>
+</ol>
+<pre><code>{
+   ...,
+    // name
+    name: &apos;Login&apos;,
+    // &#x5BF9;&#x5E94;&#x7EC4;&#x4EF6;&#x7EC4;&#x4EF6;&#x7684;name
+    component: () =&gt; import(&apos;/@/views/sys/login/index.vue&apos;),
+    ...
+},
+
+// /@/views/sys/login/index.vue
+export default defineComponent({
+    // &#x9700;&#x8981;&#x548C;&#x8DEF;&#x7531;&#x7684;name&#x4E00;&#x81F4;
+    name:&quot;Login&quot;
+});
+</code></pre><blockquote>
+<p><strong>&#x6CE8;&#x610F;</strong><br>
+keep-alive &#x751F;&#x6548;&#x7684;&#x524D;&#x63D0;&#x662F;&#xFF1A;&#x9700;&#x8981;&#x5C06;&#x8DEF;&#x7531;&#x7684; name &#x5C5E;&#x6027;&#x53CA;&#x5BF9;&#x5E94;&#x7684;&#x9875;&#x9762;&#x7684; name &#x8BBE;&#x7F6E;&#x6210;&#x4E00;&#x6837;&#x3002;&#x56E0;&#x4E3A;&#xFF1A;<br>
+<strong>include - &#x5B57;&#x7B26;&#x4E32;&#x6216;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x53EA;&#x6709;&#x540D;&#x79F0;&#x5339;&#x914D;&#x7684;&#x7EC4;&#x4EF6;&#x4F1A;&#x88AB;&#x7F13;&#x5B58;</strong></p>
+</blockquote>
+<h3 id="&#x5982;&#x4F55;&#x66F4;&#x6539;&#x9996;&#x9875;&#x8DEF;&#x7531;"><a name="&#x5982;&#x4F55;&#x66F4;&#x6539;&#x9996;&#x9875;&#x8DEF;&#x7531;" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x4F55;&#x66F4;&#x6539;&#x9996;&#x9875;&#x8DEF;&#x7531;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5982;&#x4F55;&#x66F4;&#x6539;&#x9996;&#x9875;&#x8DEF;&#x7531;" class="plugin-anchor" href="#&#x5982;&#x4F55;&#x66F4;&#x6539;&#x9996;&#x9875;&#x8DEF;&#x7531;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5982;&#x4F55;&#x66F4;&#x6539;&#x9996;&#x9875;&#x8DEF;&#x7531;</h3>
+<p>&#x9996;&#x9875;&#x8DEF;&#x7531;&#x6307;&#x7684;&#x662F;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x9ED8;&#x8BA4;&#x8DEF;&#x7531;&#xFF0C;&#x5F53;&#x4E0D;&#x8F93;&#x5165;&#x5176;&#x4ED6;&#x4EFB;&#x4F55;&#x8DEF;&#x7531;&#x65F6;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x8BE5;&#x8DEF;&#x7531;&#x4E0B;&#xFF0C;&#x5E76;&#x4E14;&#x8BE5;&#x8DEF;&#x7531;&#x5728;Tab&#x4E0A;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#xFF0C;&#x5373;&#x4F7F;&#x8BBE;&#x7F6E;affix: false&#x4E5F;&#x4E0D;&#x5141;&#x8BB8;&#x5173;&#x95ED;</p>
+<p>&#x4F8B;&#xFF1A;&#x9996;&#x9875;&#x8DEF;&#x7531;&#x914D;&#x7F6E;&#x7684;&#x662F;<code>/dashboard/analysis</code>&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x76F4;&#x63A5;&#x8BBF;&#x95EE; <code>http://localhost:3100/</code> &#x4F1A;&#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x5230;<code>http://localhost:3100/#/dashboard/analysis</code> &#x4E0A;(&#x7528;&#x6237;&#x5DF2;&#x767B;&#x5F55;&#x7684;&#x60C5;&#x51B5;&#x4E0B;)</p>
+<p>&#x53EF;&#x4EE5;&#x5C06;<code>pageEnum.ts</code>&#x4E2D;&#x7684;<code>BASE_HOME</code>&#x66F4;&#x6539;&#x4E3A;&#x9700;&#x8981;&#x4F60;&#x60F3;&#x8BBE;&#x7F6E;&#x7684;&#x9996;&#x9875;&#x5373;&#x53EF;</p>
+<pre><code>export enum PageEnum {
+    // &#x66F4;&#x6539;&#x6B64;&#x5904;&#x5373;&#x53EF;
+    BASE_HOME = &apos;/dashboard&apos;,
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../projectConfigurationItems/" class="navigation navigation-prev " aria-label="Previous page: 项目配置项">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../menu/" class="navigation navigation-next " aria-label="Next page: 菜单">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"路由","level":"1.4","depth":1,"next":{"title":"菜单","level":"1.5","depth":1,"path":"menu/README.md","ref":"menu/README.md","articles":[]},"previous":{"title":"项目配置项","level":"1.3","depth":1,"path":"projectConfigurationItems/README.md","ref":"projectConfigurationItems/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","sharing-plus","anchor-navigation-ex","favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/liuya6"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{},"github-buttons":{"buttons":[{"user":"liuya6","repo":"admin-template","size":"small"}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"harlan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"admin-doc","language":"zh-hans","gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"router/README.md","mtime":"2022-05-07T08:51:41.761Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-07T09:29:25.919Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
