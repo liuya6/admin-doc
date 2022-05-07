@@ -10,4 +10,7 @@
 * [组件](components/README.md)
   * [全局组件](components/global/README.md)
   * [常用组件](components/commonly/README.md)
+    * [page](components/commonly/Page.md)
+    * [Icon](components/commonly/Icon.md)
+    * [Authority](components/commonly/Authority.md)
 
