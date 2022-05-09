@@ -1,0 +1,962 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Model · admin-doc</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="harlan">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Tree.html" />
+    
+    
+    <link rel="prev" href="Drawer.html" />
+    
+
+    
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"liuya6","repo":"admin-template","size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../start/">
+            
+                <a href="../../start/">
+            
+                    
+                    开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../projectConfigurationItems/">
+            
+                <a href="../../projectConfigurationItems/">
+            
+                    
+                    项目配置项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../router/">
+            
+                <a href="../../router/">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../menu/">
+            
+                <a href="../../menu/">
+            
+                    
+                    菜单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../authority/">
+            
+                <a href="../../authority/">
+            
+                    
+                    权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../style/">
+            
+                <a href="../../style/">
+            
+                    
+                    样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../global/">
+            
+                <a href="../global/">
+            
+                    
+                    全局组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    常用组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="Page.html">
+            
+                <a href="Page.html">
+            
+                    
+                    page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.2" data-path="Icon.html">
+            
+                <a href="Icon.html">
+            
+                    
+                    Icon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.3" data-path="Authority.html">
+            
+                <a href="Authority.html">
+            
+                    
+                    Authority
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.4" data-path="Form.html">
+            
+                <a href="Form.html">
+            
+                    
+                    Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.5" data-path="Table.html">
+            
+                <a href="Table.html">
+            
+                    
+                    Table
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.6" data-path="PopConfirmButton.html">
+            
+                <a href="PopConfirmButton.html">
+            
+                    
+                    PopConfirmButton
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.7" data-path="CollapseContainer.html">
+            
+                <a href="CollapseContainer.html">
+            
+                    
+                    CollapseContainer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.8" data-path="ScrollContainer.html">
+            
+                <a href="ScrollContainer.html">
+            
+                    
+                    ScrollContainer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.9" data-path="LazyContainer.html">
+            
+                <a href="LazyContainer.html">
+            
+                    
+                    LazyContainer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.10" data-path="CountTo.html">
+            
+                <a href="CountTo.html">
+            
+                    
+                    CountTo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.11" data-path="Drawer.html">
+            
+                <a href="Drawer.html">
+            
+                    
+                    Drawer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.2.12" data-path="Model.html">
+            
+                <a href="Model.html">
+            
+                    
+                    Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.13" data-path="Tree.html">
+            
+                <a href="Tree.html">
+            
+                    
+                    Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.14" data-path="Qrcode.html">
+            
+                <a href="Qrcode.html">
+            
+                    
+                    Qrcode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.15" data-path="Tinymce.html">
+            
+                <a href="Tinymce.html">
+            
+                    
+                    Tinymce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.16" data-path="Transition.html">
+            
+                <a href="Transition.html">
+            
+                    
+                    Transition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.17" data-path="VirtualScroll.html">
+            
+                <a href="VirtualScroll.html">
+            
+                    
+                    VirtualScroll
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../package/">
+            
+                <a href="../../package/">
+            
+                    
+                    打包构建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Model</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#modal-&#x5F39;&#x7A97;"><b></b>modal &#x5F39;&#x7A97;</a></li><li><span class="title-icon "></span><a href="#&#x7528;&#x6CD5;"><b></b>&#x7528;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#usemodal"><b></b>useModal</a></li><li><span class="title-icon "></span><a href="#usemodalinner"><b></b>useModalInner</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h3 id="modal-&#x5F39;&#x7A97;"><a name="modal-&#x5F39;&#x7A97;" class="anchor-navigation-ex-anchor" href="#modal-&#x5F39;&#x7A97;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="modal-&#x5F39;&#x7A97;" class="plugin-anchor" href="#modal-&#x5F39;&#x7A97;"><i class="fa fa-link" aria-hidden="true"></i></a><font color="red">modal &#x5F39;&#x7A97;<font></font></font></h3>
+<p>&#x5BF9; antv &#x7684; modal &#x7EC4;&#x4EF6;&#x8FDB;&#x884C;&#x5C01;&#x88C5;&#xFF0C;&#x6269;&#x5C55;&#x62D6;&#x62FD;&#xFF0C;&#x5168;&#x5C4F;&#xFF0C;&#x81EA;&#x9002;&#x5E94;&#x9AD8;&#x5EA6;&#x7B49;&#x529F;&#x80FD;</p>
+<h3 id="&#x7528;&#x6CD5;"><a name="&#x7528;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7528;&#x6CD5;" class="plugin-anchor" href="#&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><font color="red">&#x7528;&#x6CD5;<font></font></font></h3>
+<p>&#x7531;&#x4E8E;&#x5F39;&#x7A97;&#x5185;&#x4EE3;&#x7801;&#x4E00;&#x822C;&#x4F5C;&#x4E3A;&#x5355;&#x6587;&#x4EF6;&#x7EC4;&#x4EF6;&#x5B58;&#x5728;&#xFF0C;&#x4E5F;&#x63A8;&#x8350;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x6240;&#x4EE5;&#x793A;&#x4F8B;&#x90FD;&#x4E3A;&#x5355;&#x6587;&#x4EF6;&#x7EC4;&#x4EF6;&#x5F62;&#x5F0F;</p>
+<pre><code class="lang-vue">&lt;template&gt;
+  &lt;BasicModal v-bind=&quot;$attrs&quot; title=&quot;Modal Title&quot; :helpMessage=&quot;[&apos;&#x63D0;&#x793A;1&apos;, &apos;&#x63D0;&#x793A;2&apos;]&quot;&gt;
+    Modal Info.
+  &lt;/BasicModal&gt;
+&lt;/template&gt;
+&lt;script lang=&quot;ts&quot;&gt;
+  import { defineComponent } from &apos;vue&apos;;
+  import { BasicModal } from &apos;/@/components/Modal&apos;;
+  export default defineComponent({
+    components: { BasicModal },
+    setup() {
+      return {};
+    },
+  });
+&lt;/script&gt;
+</code></pre>
+<blockquote>
+<p>&#x6CE8;&#x610F; v-bind=&quot;$attrs&quot;&#x8BB0;&#x5F97;&#x5199;&#xFF0C;&#x7528;&#x4E8E;&#x5C06;&#x5F39;&#x7A97;&#x7EC4;&#x4EF6;&#x7684; attribute &#x4F20;&#x5165; BasicModal &#x7EC4;&#x4EF6;</p>
+</blockquote>
+<h6 id="&#x9875;&#x9762;&#x5F15;&#x7528;&#x5F39;&#x7A97;"><a name="&#x9875;&#x9762;&#x5F15;&#x7528;&#x5F39;&#x7A97;" class="anchor-navigation-ex-anchor" href="#&#x9875;&#x9762;&#x5F15;&#x7528;&#x5F39;&#x7A97;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x9875;&#x9762;&#x5F15;&#x7528;&#x5F39;&#x7A97;" class="plugin-anchor" href="#&#x9875;&#x9762;&#x5F15;&#x7528;&#x5F39;&#x7A97;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9875;&#x9762;&#x5F15;&#x7528;&#x5F39;&#x7A97;</h6>
+<pre><code class="lang-vue">// Page.vue
+&lt;template&gt;
+  &lt;div class=&quot;px-10&quot;&gt;
+    &lt;Modal @register=&quot;register&quot; /&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script lang=&quot;ts&quot;&gt;
+  import { defineComponent } from &apos;vue&apos;;
+  import { useModal } from &apos;/@/components/Modal&apos;;
+  import Modal from &apos;./Modal.vue&apos;;
+  export default defineComponent({
+    components: { Modal },
+    setup() {
+      const [register, { openModal }] = useModal();
+      return {
+        register,
+        openModal,
+      };
+    },
+  });
+&lt;/script&gt;
+</code></pre>
+<h3 id="usemodal"><a name="usemodal" class="anchor-navigation-ex-anchor" href="#usemodal"><i class="fa fa-link" aria-hidden="true"></i></a><a name="usemodal" class="plugin-anchor" href="#usemodal"><i class="fa fa-link" aria-hidden="true"></i></a><font color="red">useModal<font></font></font></h3>
+<p>&#x7528;&#x4E8E;&#x5916;&#x90E8;&#x7EC4;&#x4EF6;&#x8C03;&#x7528;<br>
+useModal &#x7528;&#x4E8E;&#x64CD;&#x4F5C;&#x7EC4;&#x4EF6;</p>
+<pre><code>const [register, { openModal, setModalProps }] = useModal();
+</code></pre><h6 id="register"><a name="register" class="anchor-navigation-ex-anchor" href="#register"><i class="fa fa-link" aria-hidden="true"></i></a><a name="register" class="plugin-anchor" href="#register"><i class="fa fa-link" aria-hidden="true"></i></a>register</h6>
+<p>register &#x7528;&#x4E8E;&#x6CE8;&#x518C; <code>useModal</code>&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x4F7F;&#x7528; <code>useModal</code> &#x63D0;&#x4F9B;&#x7684; api&#xFF0C;&#x5FC5;&#x987B;&#x5C06; <code>register</code> &#x4F20;&#x5165;&#x7EC4;&#x4EF6;&#x7684; <code>onRegister</code>&#x3002;</p>
+<p>&#x539F;&#x7406;&#x5176;&#x5B9E;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5C31;&#x662F; vue &#x7684;&#x7EC4;&#x4EF6;&#x5B50;&#x4F20;&#x7236;&#x901A;&#x4FE1;&#xFF0C;&#x5185;&#x90E8;&#x901A;&#x8FC7; emit(&quot;register&quot;&#xFF0C;instance) &#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x540C;&#x65F6;&#x72EC;&#x7ACB;&#x51FA;&#x53BB;&#x7684;&#x7EC4;&#x4EF6;&#x9700;&#x8981;&#x5C06; attrs &#x7ED1;&#x5B9A;&#x5230; BasicModal &#x4E0A;&#x9762;&#x3002;</p>
+<pre><code class="lang-vue">&lt;template&gt;
+  &lt;BasicModal v-bind=&quot;$attrs&quot;&gt;&lt;/BasicModal&gt;
+&lt;/template&gt;
+</code></pre>
+<h6 id="openmodal"><a name="openmodal" class="anchor-navigation-ex-anchor" href="#openmodal"><i class="fa fa-link" aria-hidden="true"></i></a><a name="openmodal" class="plugin-anchor" href="#openmodal"><i class="fa fa-link" aria-hidden="true"></i></a>openModal</h6>
+<p>&#x7528;&#x4E8E;&#x6253;&#x5F00;/&#x5173;&#x95ED;&#x5F39;&#x7A97;</p>
+<pre><code>// true/false: &#x6253;&#x5F00;&#x5173;&#x95ED;&#x5F39;&#x7A97;
+// data: &#x4F20;&#x9012;&#x5230;&#x5B50;&#x7EC4;&#x4EF6;&#x7684;&#x6570;&#x636E;
+openModal(true, data);
+</code></pre><h6 id="closemodal"><a name="closemodal" class="anchor-navigation-ex-anchor" href="#closemodal"><i class="fa fa-link" aria-hidden="true"></i></a><a name="closemodal" class="plugin-anchor" href="#closemodal"><i class="fa fa-link" aria-hidden="true"></i></a>closeModal</h6>
+<p>&#x7528;&#x4E8E;&#x5173;&#x95ED;&#x5F39;&#x7A97;</p>
+<pre><code>closeModal();
+</code></pre><h6 id="setmodalprops"><a name="setmodalprops" class="anchor-navigation-ex-anchor" href="#setmodalprops"><i class="fa fa-link" aria-hidden="true"></i></a><a name="setmodalprops" class="plugin-anchor" href="#setmodalprops"><i class="fa fa-link" aria-hidden="true"></i></a>setModalProps</h6>
+<p>&#x7528;&#x4E8E;&#x66F4;&#x6539; modal &#x7684; props &#x53C2;&#x6570;&#x56E0;&#x4E3A; modal &#x5185;&#x5BB9;&#x72EC;&#x7ACB;&#x6210;&#x7EC4;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x5916;&#x90E8;&#x9875;&#x9762;&#x9700;&#x8981;&#x66F4;&#x6539; props &#x53EF;&#x80FD;&#x6BD4;&#x8F83;&#x9EBB;&#x70E6;&#xFF0C;&#x6240;&#x4EE5;&#x63D0;&#x4F9B; setModalProps &#x65B9;&#x4FBF;&#x66F4;&#x6539;&#x5185;&#x90E8; modal &#x7684; props <br></p>
+<p>Props &#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x89C1;&#x4E0B;&#x65B9;</p>
+<pre><code>setModalProps(props);
+</code></pre><h3 id="usemodalinner"><a name="usemodalinner" class="anchor-navigation-ex-anchor" href="#usemodalinner"><i class="fa fa-link" aria-hidden="true"></i></a><a name="usemodalinner" class="plugin-anchor" href="#usemodalinner"><i class="fa fa-link" aria-hidden="true"></i></a><font color="red">useModalInner</font></h3>
+<h4 id="&#x7528;&#x6CD5;_1"><a name="&#x7528;&#x6CD5;_1" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x6CD5;_1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7528;&#x6CD5;" class="plugin-anchor" href="#&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7528;&#x6CD5;</h4>
+<pre><code class="lang-vue">&lt;template&gt;
+  &lt;BasicModal
+    v-bind=&quot;$attrs&quot;
+    @register=&quot;register&quot;
+    title=&quot;Modal Title&quot;
+    :helpMessage=&quot;[&apos;&#x63D0;&#x793A;1&apos;, &apos;&#x63D0;&#x793A;2&apos;]&quot;
+  &gt;
+    &lt;a-button type=&quot;primary&quot; @click=&quot;closeModal&quot; class=&quot;mr-2&quot;&gt;&#x4ECE;&#x5185;&#x90E8;&#x5173;&#x95ED;&#x5F39;&#x7A97;&lt;/a-button&gt;
+
+    &lt;a-button type=&quot;primary&quot; @click=&quot;setModalProps&quot;&gt;&#x4ECE;&#x5185;&#x90E8;&#x4FEE;&#x6539;title&lt;/a-button&gt;
+  &lt;/BasicModal&gt;
+&lt;/template&gt;
+&lt;script lang=&quot;ts&quot;&gt;
+  import { defineComponent } from &apos;vue&apos;;
+  import { BasicModal, useModalInner } from &apos;/@/components/Modal&apos;;
+  export default defineComponent({
+    components: { BasicModal },
+    setup() {
+      const [register, { closeModal, setModalProps }] = useModalInner();
+      return {
+        register,
+        closeModal,
+        setModalProps: () =&gt; {
+          setModalProps({ title: &apos;Modal New Title&apos; });
+        },
+      };
+    },
+  });
+&lt;/script&gt;
+</code></pre>
+<p>useModalInner&#x7528;&#x4E8E;&#x64CD;&#x4F5C;&#x72EC;&#x7ACB;&#x7EC4;&#x4EF6;</p>
+<pre><code class="lang-vue">const [register, { closeModal, setModalProps }] = useModalInner(callback);
+</code></pre>
+<h6 id="callback"><a name="callback" class="anchor-navigation-ex-anchor" href="#callback"><i class="fa fa-link" aria-hidden="true"></i></a><a name="callback" class="plugin-anchor" href="#callback"><i class="fa fa-link" aria-hidden="true"></i></a>callback</h6>
+<p>type: (data:any)=&gt;void</p>
+<p>&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x63A5;&#x6536; openModal &#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7684;&#x503C;</p>
+<pre><code>useModal((data: any) =&gt; {
+  console.log(data);
+});
+</code></pre><h6 id="closemodal_1"><a name="closemodal_1" class="anchor-navigation-ex-anchor" href="#closemodal_1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="closemodal" class="plugin-anchor" href="#closemodal"><i class="fa fa-link" aria-hidden="true"></i></a>closeModal</h6>
+<p>&#x7528;&#x4E8E;&#x5173;&#x95ED;&#x5F39;&#x7A97;</p>
+<pre><code>closeModal();
+</code></pre><h6 id="changeokloading"><a name="changeokloading" class="anchor-navigation-ex-anchor" href="#changeokloading"><i class="fa fa-link" aria-hidden="true"></i></a><a name="changeokloading" class="plugin-anchor" href="#changeokloading"><i class="fa fa-link" aria-hidden="true"></i></a>changeOkLoading</h6>
+<p>&#x7528;&#x4E8E;&#x4FEE;&#x6539;&#x786E;&#x8BA4;&#x6309;&#x94AE;&#x7684; loading &#x72B6;&#x6001;</p>
+<pre><code>changeOkLoading(true);
+</code></pre><h6 id="changeloading"><a name="changeloading" class="anchor-navigation-ex-anchor" href="#changeloading"><i class="fa fa-link" aria-hidden="true"></i></a><a name="changeloading" class="plugin-anchor" href="#changeloading"><i class="fa fa-link" aria-hidden="true"></i></a>changeLoading</h6>
+<p>&#x7528;&#x4E8E;&#x4FEE;&#x6539; modal &#x7684; loading &#x72B6;&#x6001;</p>
+<pre><code>// true or false
+changeLoading(true);
+</code></pre><p>setModalProps</p>
+<p>&#x7528;&#x4E8E;&#x66F4;&#x6539; modal &#x7684; props &#x53C2;&#x6570;&#x56E0;&#x4E3A; modal &#x5185;&#x5BB9;&#x72EC;&#x7ACB;&#x6210;&#x7EC4;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x5916;&#x90E8;&#x9875;&#x9762;&#x9700;&#x8981;&#x66F4;&#x6539; props &#x53EF;&#x80FD;&#x6BD4;&#x8F83;&#x9EBB;&#x70E6;&#xFF0C;&#x6240;&#x4EE5;&#x63D0;&#x4F9B; setModalProps &#x65B9;&#x4FBF;&#x66F4;&#x6539;&#x5185;&#x90E8; modal &#x7684; props</p>
+<p>Props &#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x89C1;&#x4E0B;&#x65B9;</p>
+<h4 id="props"><a name="props" class="anchor-navigation-ex-anchor" href="#props"><i class="fa fa-link" aria-hidden="true"></i></a><a name="props" class="plugin-anchor" href="#props"><i class="fa fa-link" aria-hidden="true"></i></a>Props</h4>
+<p>&#x9664;&#x4EE5;&#x4E0B;&#x53C2;&#x6570;&#x5916;&#xFF0C;&#x7EC4;&#x4EF6;&#x5E93;&#x6587;&#x6863;&#x5185;&#x7684; props &#x4E5F;&#x90FD;&#x652F;&#x6301;&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x4EE5;&#x53C2;&#x8003; antv modal</p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x53EF;&#x9009;&#x503C;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>-</td>
+<td>-</td>
+<td>model&#x6807;&#x9898;</td>
+</tr>
+<tr>
+<td>height</td>
+<td>number</td>
+<td>-</td>
+<td>-</td>
+<td>&#x56FA;&#x5B9A;modal&#x7684;&#x9AD8;&#x5EA6;</td>
+</tr>
+<tr>
+<td>minHeight</td>
+<td>number</td>
+<td>-</td>
+<td>-</td>
+<td>&#x8BBE;&#x7F6E; modal &#x7684;&#x6700;&#x5C0F;&#x9AD8;&#x5EA6;</td>
+</tr>
+<tr>
+<td>draggable</td>
+<td>boolean</td>
+<td>true</td>
+<td>true/false</td>
+<td>&#x662F;&#x5426;&#x5F00;&#x542F;&#x62D6;&#x62FD;</td>
+</tr>
+<tr>
+<td>useWrapper</td>
+<td>boolean</td>
+<td>true</td>
+<td>true/false</td>
+<td>&#x662F;&#x5426;&#x5F00;&#x542F;&#x81EA;&#x9002;&#x5E94;&#x9AD8;&#x5EA6;&#xFF0C;&#x5F00;&#x542F;&#x540E;&#x4F1A;&#x8DDF;&#x968F;&#x5C4F;&#x5E55;&#x53D8;&#x5316;&#x81EA;&#x9002;&#x5E94;&#x5185;&#x5BB9;&#xFF0C;&#x5E76;&#x51FA;&#x73B0;&#x6EDA;&#x52A8;&#x6761;</td>
+</tr>
+<tr>
+<td>wrapperFooterOffset</td>
+<td>number</td>
+<td>0</td>
+<td>-</td>
+<td>&#x5F00;&#x542F;&#x662F;&#x9002;&#x5E94;&#x9AD8;&#x5EA6;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x8FC7;&#x5C4F;&#x5E55;&#x9AD8;&#x5EA6;&#xFF0C;&#x5E95;&#x90E8;&#x548C;&#x9876;&#x90E8;&#x4F1A;&#x4FDD;&#x6301;&#x4E00;&#x6837;&#x7684;&#x95F4;&#x8DDD;&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x7F29;&#x5C0F;&#x5E95;&#x90E8;&#x7684;&#x95F4;&#x8DDD;</td>
+</tr>
+<tr>
+<td>canFullscreen</td>
+<td>boolean</td>
+<td>true</td>
+<td>true/false</td>
+<td>&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x5168;&#x5C4F;</td>
+</tr>
+<tr>
+<td>defaultFullscreen</td>
+<td>boolean</td>
+<td>false</td>
+<td>true/false</td>
+<td>&#x9ED8;&#x8BA4;&#x5168;&#x5C4F;</td>
+</tr>
+<tr>
+<td>loading</td>
+<td>boolean</td>
+<td>false</td>
+<td>true/false</td>
+<td>loading &#x72B6;&#x6001;</td>
+</tr>
+<tr>
+<td>loadingTip</td>
+<td>string</td>
+<td>-</td>
+<td>-</td>
+<td>loading &#x6587;&#x672C;</td>
+</tr>
+<tr>
+<td>showCancelBtn</td>
+<td>boolean</td>
+<td>true</td>
+<td>true/false</td>
+<td>&#x663E;&#x793A;&#x5173;&#x95ED;&#x6309;&#x94AE;</td>
+</tr>
+<tr>
+<td>showOkBtn</td>
+<td>boolean</td>
+<td>true</td>
+<td>true/false</td>
+<td>&#x663E;&#x793A;&#x786E;&#x8BA4;&#x6309;&#x94AE;</td>
+</tr>
+<tr>
+<td>helpMessage</td>
+<td>string,string[]</td>
+<td>-</td>
+<td>-</td>
+<td>&#x6807;&#x9898;&#x53F3;&#x4FA7;&#x63D0;&#x793A;&#x6587;&#x672C;</td>
+</tr>
+<tr>
+<td>centered</td>
+<td>boolean</td>
+<td>false</td>
+<td>true/false</td>
+<td>&#x662F;&#x5426;&#x5C45;&#x4E2D;&#x5F39;&#x7A97;</td>
+</tr>
+<tr>
+<td>cancelText</td>
+<td>string</td>
+<td>&apos;&#x5173;&#x95ED;&apos;</td>
+<td>-</td>
+<td>&#x5173;&#x95ED;&#x6309;&#x94AE;&#x6587;&#x672C;</td>
+</tr>
+<tr>
+<td>okText</td>
+<td>string</td>
+<td>&apos;&#x4FDD;&#x5B58;&apos;</td>
+<td>-</td>
+<td>&#x786E;&#x8BA4;&#x6309;&#x94AE;&#x6587;&#x672C;</td>
+</tr>
+<tr>
+<td>closeFunc</td>
+<td>()=&gt;Promise<boolean></boolean></td>
+<td>&#x5173;&#x95ED;&#x51FD;&#x6570;</td>
+<td>-</td>
+<td>&#x5173;&#x95ED;&#x524D;&#x6267;&#x884C;&#xFF0C;&#x8FD4;&#x56DE; true &#x5219;&#x5173;&#x95ED;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x5173;&#x95ED;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="events"><a name="events" class="anchor-navigation-ex-anchor" href="#events"><i class="fa fa-link" aria-hidden="true"></i></a><a name="events" class="plugin-anchor" href="#events"><i class="fa fa-link" aria-hidden="true"></i></a>Events</h4>
+<table>
+<thead>
+<tr>
+<th>&#x4E8B;&#x4EF6;&#x540D;</th>
+<th>&#x56DE;&#x8C03;&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ok</td>
+<td>function(e)</td>
+<td>&#x70B9;&#x51FB;&#x786E;&#x5B9A;&#x56DE;&#x8C03;</td>
+</tr>
+<tr>
+<td>cancel</td>
+<td>function(e)</td>
+<td>&#x70B9;&#x51FB;&#x53D6;&#x6D88;&#x56DE;&#x8C03;</td>
+</tr>
+<tr>
+<td>visible-change</td>
+<td>(visible:boolean)=&gt;{}</td>
+<td>&#x6253;&#x5F00;&#x6216;&#x8005;&#x5173;&#x95ED;&#x89E6;&#x53D1;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="slots"><a name="slots" class="anchor-navigation-ex-anchor" href="#slots"><i class="fa fa-link" aria-hidden="true"></i></a><a name="slots" class="plugin-anchor" href="#slots"><i class="fa fa-link" aria-hidden="true"></i></a>Slots</h4>
+<table>
+<thead>
+<tr>
+<th>&#x4E8B;&#x4EF6;&#x540D;</th>
+<th>&#x56DE;&#x8C03;&#x53C2;&#x6570;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>default</td>
+<td>&#x9ED8;&#x8BA4;&#x533A;&#x57DF;</td>
+</tr>
+<tr>
+<td>footer</td>
+<td>&#x5E95;&#x90E8;&#x533A;&#x57DF;(&#x4F1A;&#x66FF;&#x6362;&#x6389;&#x9ED8;&#x8BA4;&#x7684;&#x6309;&#x94AE;)</td>
+</tr>
+<tr>
+<td>insertFooter</td>
+<td>&#x5173;&#x95ED;&#x6309;&#x94AE;&#x7684;&#x5DE6;&#x8FB9;(&#x4E0D;&#x4F7F;&#x7528;footer&#x63D2;&#x69FD;&#x65F6;&#x6709;&#x6548;)</td>
+</tr>
+<tr>
+<td>centerFooter</td>
+<td>&#x5173;&#x95ED;&#x6309;&#x94AE;&#x548C;&#x786E;&#x8BA4;&#x6309;&#x94AE;&#x7684;&#x4E2D;&#x95F4;(&#x4E0D;&#x4F7F;&#x7528;footer&#x63D2;&#x69FD;&#x65F6;&#x6709;&#x6548;)</td>
+</tr>
+<tr>
+<td>appendFooter</td>
+<td>&#x786E;&#x8BA4;&#x6309;&#x94AE;&#x7684;&#x53F3;&#x8FB9;(&#x4E0D;&#x4F7F;&#x7528;footer&#x63D2;&#x69FD;&#x65F6;&#x6709;&#x6548;)</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Drawer.html" class="navigation navigation-prev " aria-label="Previous page: Drawer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Tree.html" class="navigation navigation-next " aria-label="Next page: Tree">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Model","level":"1.8.2.12","depth":3,"next":{"title":"Tree","level":"1.8.2.13","depth":3,"path":"components/commonly/Tree.md","ref":"components/commonly/Tree.md","articles":[]},"previous":{"title":"Drawer","level":"1.8.2.11","depth":3,"path":"components/commonly/Drawer.md","ref":"components/commonly/Drawer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","sharing-plus","anchor-navigation-ex","favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/liuya6"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{},"github-buttons":{"buttons":[{"user":"liuya6","repo":"admin-template","size":"small"}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"harlan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"admin-doc","language":"zh-hans","gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"components/commonly/Model.md","mtime":"2022-05-09T08:58:06.004Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-09T10:43:45.276Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

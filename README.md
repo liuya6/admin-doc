@@ -43,9 +43,7 @@ pnpm build
 * [WindiCss](https://windicss.org/)
 
 ### 浏览器支持
-
 本地开发推荐使用`Chrome 80+` 浏览器
-
 支持现代浏览器, 不支持 IE
 
 | IE | Edge | Firefox | Chrome | Safari |

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>page · admin-doc</title>
+        <title>VirtualScroll · admin-doc</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -75,10 +75,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Icon.html" />
+    <link rel="next" href="../../package/" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="Transition.html" />
     
 
     
@@ -255,7 +255,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.8.2.1" data-path="Page.html">
+        <li class="chapter " data-level="1.8.2.1" data-path="Page.html">
             
                 <a href="Page.html">
             
@@ -463,7 +463,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2.17" data-path="VirtualScroll.html">
+        <li class="chapter active" data-level="1.8.2.17" data-path="VirtualScroll.html">
             
                 <a href="VirtualScroll.html">
             
@@ -529,7 +529,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >page</a>
+        <a href="../.." >VirtualScroll</a>
     </h1>
 </div>
 
@@ -544,157 +544,132 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#page"><b></b>Page</a></li><li><span class="title-icon "></span><a href="#pagewrapper"><b></b>PageWrapper</a></li><li><span class="title-icon "></span><a href="#pagefooter"><b></b>PageFooter</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h3 id="page"><a name="page" class="anchor-navigation-ex-anchor" href="#page"><i class="fa fa-link" aria-hidden="true"></i></a><a name="page" class="plugin-anchor" href="#page"><i class="fa fa-link" aria-hidden="true"></i></a>Page</h3>
-<p>&#x9875;&#x9762;&#x76F8;&#x5173;&#x7EC4;&#x4EF6;</p>
-<h3 id="pagewrapper"><a name="pagewrapper" class="anchor-navigation-ex-anchor" href="#pagewrapper"><i class="fa fa-link" aria-hidden="true"></i></a><a name="pagewrapper" class="plugin-anchor" href="#pagewrapper"><i class="fa fa-link" aria-hidden="true"></i></a>PageWrapper</h3>
-<p>&#x7528;&#x4E8E;&#x5305;&#x88F9;&#x9875;&#x9762;&#x7EC4;&#x4EF6; <br></p>
-<h4 id="&#x7528;&#x6CD5;&#xFF1A;"><a name="&#x7528;&#x6CD5;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x6CD5;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7528;&#x6CD5;&#xFF1A;" class="plugin-anchor" href="#&#x7528;&#x6CD5;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7528;&#x6CD5;&#xFF1A;</h4>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#virtualscroll"><b></b>VirtualScroll</a></li><li><span class="title-icon "></span><a href="#&#x7528;&#x6CD5;"><b></b>&#x7528;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#prop"><b></b>Prop</a></li><li><span class="title-icon "></span><a href="#slots"><b></b>Slots</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h3 id="virtualscroll"><a name="virtualscroll" class="anchor-navigation-ex-anchor" href="#virtualscroll"><i class="fa fa-link" aria-hidden="true"></i></a><a name="virtualscroll" class="plugin-anchor" href="#virtualscroll"><i class="fa fa-link" aria-hidden="true"></i></a>VirtualScroll</h3>
+<p>&#x865A;&#x62DF;&#x6EDA;&#x52A8;&#x7EC4;&#x4EF6;&#xFF08;&#x7528;&#x4E8E;&#x5927;&#x91CF;&#x6570;&#x636E;&#x7EAF;&#x5C55;&#x793A;&#x65F6;&#x4F7F;&#x7528;&#xFF09;</p>
+<h3 id="&#x7528;&#x6CD5;"><a name="&#x7528;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7528;&#x6CD5;" class="plugin-anchor" href="#&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7528;&#x6CD5;</h3>
 <pre><code class="lang-vue">&lt;template&gt;
-  &lt;div&gt;
-    &lt;PageWrapper&gt;
-      &lt;template #left&gt;left&lt;/template&gt;
-      &lt;template #right&gt;right&lt;/template&gt;
-    &lt;/PageWrapper&gt;
+  &lt;div class=&quot;p-4 virtual-scroll-demo&quot;&gt;
+    &lt;Divider&gt;&#x57FA;&#x7840;&#x6EDA;&#x52A8;&#x793A;&#x4F8B;&lt;/Divider&gt;
+    &lt;div class=&quot;virtual-scroll-demo-wrap&quot;&gt;
+      &lt;VirtualScroll :itemHeight=&quot;41&quot; :items=&quot;data&quot; :height=&quot;300&quot; :width=&quot;300&quot;&gt;
+        &lt;template v-slot=&quot;{ item }&quot;&gt;
+          &lt;div class=&quot;virtual-scroll-demo__item&quot;&gt;{{ item.title }}&lt;/div&gt;
+        &lt;/template&gt;
+      &lt;/VirtualScroll&gt;
+    &lt;/div&gt;
+    &lt;Divider&gt;&#x5373;&#x4F7F;&#x4E0D;&#x53EF;&#x89C1;&#xFF0C;&#x4E5F;&#x9884;&#x5148;&#x52A0;&#x8F7D;50&#x6761;&#x6570;&#x636E;&#xFF0C;&#x9632;&#x6B62;&#x7A7A;&#x767D;&lt;/Divider&gt;
+    &lt;div class=&quot;virtual-scroll-demo-wrap&quot;&gt;
+      &lt;VirtualScroll :itemHeight=&quot;41&quot; :items=&quot;data&quot; :height=&quot;300&quot; :width=&quot;300&quot; :bench=&quot;50&quot;&gt;
+        &lt;template v-slot=&quot;{ item }&quot;&gt;
+          &lt;div class=&quot;virtual-scroll-demo__item&quot;&gt;{{ item.title }}&lt;/div&gt;
+        &lt;/template&gt;
+      &lt;/VirtualScroll&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script&gt;
-  import { PageWrapper } from &apos;/@/components/Page&apos;;
+&lt;script lang=&quot;ts&quot;&gt;
   import { defineComponent } from &apos;vue&apos;;
+  import { VirtualScroll } from &apos;/@/components/VirtualScroll/index&apos;;
+
+  import { Divider } from &apos;ant-design-vue&apos;;
+  const data: any[] = (() =&gt; {
+    const arr: any[] = [];
+    for (let index = 1; index &lt; 20000; index++) {
+      arr.push({
+        title: &apos;&#x5217;&#x8868;&#x9879;&apos; + index,
+      });
+    }
+    return arr;
+  })();
   export default defineComponent({
-    components: { PageWrapper },
+    components: { VirtualScroll, Divider },
     setup() {
-      return {};
+      return { data: data };
     },
   });
 &lt;/script&gt;
+&lt;style lang=&quot;less&quot; scoped&gt;
+  .virtual-scroll-demo {
+    &amp;-wrap {
+      display: flex;
+      margin: 0 30%;
+      background: #fff;
+      justify-content: center;
+    }
+
+    /deep/ &amp;__item {
+      height: 40px;
+      padding: 0 20px;
+      line-height: 40px;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+&lt;/style&gt;
 </code></pre>
-<h4 id="props"><a name="props" class="anchor-navigation-ex-anchor" href="#props"><i class="fa fa-link" aria-hidden="true"></i></a><a name="props" class="plugin-anchor" href="#props"><i class="fa fa-link" aria-hidden="true"></i></a>props</h4>
+<h3 id="prop"><a name="prop" class="anchor-navigation-ex-anchor" href="#prop"><i class="fa fa-link" aria-hidden="true"></i></a><a name="prop" class="plugin-anchor" href="#prop"><i class="fa fa-link" aria-hidden="true"></i></a>Prop</h3>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">&#x5C5E;&#x6027;</th>
-<th style="text-align:center">&#x7C7B;&#x578B;</th>
-<th style="text-align:center">&#x9ED8;&#x8BA4;&#x503C;</th>
-<th style="text-align:center">&#x8BF4;&#x660E;</th>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">title</td>
-<td style="text-align:center"><code>string</code></td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">pageHeader title</td>
+<td>height</td>
+<td>string&#xFF5C;number</td>
+<td>&#x9AD8;&#x5EA6;</td>
 </tr>
 <tr>
-<td style="text-align:center">dense</td>
-<td style="text-align:center"><code>boolean</code></td>
-<td style="text-align:center"><code>false</code></td>
-<td style="text-align:center">&#x662F;&#x5426;&#x7F29;&#x5C0F;&#x4E3B;&#x4F53;&#x533A;&#x57DF;,&#x4E3A; true &#x5C06;&#x4F1A;&#x53D6;&#x6D88; padding/margin</td>
+<td>width</td>
+<td>string&#xFF5C;number</td>
+<td>&#x5BBD;&#x5EA6;</td>
 </tr>
 <tr>
-<td style="text-align:center">content</td>
-<td style="text-align:center"><code>string</code></td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">pageHeader Content &#x5185;&#x5BB9;</td>
+<td>maxHeight</td>
+<td>string&#xFF5C;number</td>
+<td>&#x6700;&#x5927;&#x9AD8;&#x5EA6;</td>
 </tr>
 <tr>
-<td style="text-align:center">contentStyle</td>
-<td style="text-align:center"><code>object</code></td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">&#x4E3B;&#x9898;&#x533A;&#x57DF;&#x6837;&#x5F0F;</td>
+<td>maxWidth</td>
+<td>string&#xFF5C;number</td>
+<td>&#x6700;&#x5927;&#x5BBD;&#x5EA6;</td>
 </tr>
 <tr>
-<td style="text-align:center">contentClass</td>
-<td style="text-align:center"><code>string</code></td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">&#x4E3B;&#x9898;&#x533A;&#x57DF;class</td>
+<td>minHeight</td>
+<td>string&#xFF5C;number</td>
+<td>&#x6700;&#x5C0F;&#x9AD8;&#x5EA6;</td>
 </tr>
 <tr>
-<td style="text-align:center">contentBackground</td>
-<td style="text-align:center"><code>boolean</code></td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">&#x4E3B;&#x9898;&#x533A;&#x57DF;&#x80CC;&#x666F;</td>
+<td>minWidth</td>
+<td>string&#xFF5C;number</td>
+<td>&#x6700;&#x5C0F;&#x5BBD;&#x5EA6;</td>
 </tr>
 <tr>
-<td style="text-align:center">contentFullHeight</td>
-<td style="text-align:center"><code>boolean</code></td>
-<td style="text-align:center"><code>false</code></td>
-<td style="text-align:center">&#x4E3B;&#x4F53;&#x533A;&#x57DF;&#x662F;&#x5426;&#x5360;&#x6EE1;&#x6574;&#x4E2A;&#x5C4F;&#x5E55;&#x9AD8;&#x5EA6;</td>
+<td>itemHeight</td>
+<td>string&#xFF5C;number</td>
+<td>&#x6BCF;&#x4E2A;&#x9009;&#x9879;&#x9AD8;&#x5EA6;&#xFF0C;&#x5FC5;&#x4F20;</td>
 </tr>
 <tr>
-<td style="text-align:center">fixedHeight</td>
-<td style="text-align:center"><code>boolean</code></td>
-<td style="text-align:center"><code>false</code></td>
-<td style="text-align:center">&#x56FA;&#x5B9A;&#x4E3B;&#x4F53;&#x533A;&#x57DF;&#x9AD8;&#x5EA6;</td>
+<td>items</td>
+<td>any[]</td>
+<td>&#x9009;&#x9879;&#x5217;&#x8868;</td>
 </tr>
 </tbody>
 </table>
-<h4 id="slots"><a name="slots" class="anchor-navigation-ex-anchor" href="#slots"><i class="fa fa-link" aria-hidden="true"></i></a><a name="slots" class="plugin-anchor" href="#slots"><i class="fa fa-link" aria-hidden="true"></i></a>Slots</h4>
-<p>pageHeader &#x7684; slot &#x90FD;&#x652F;&#x6301;</p>
+<h3 id="slots"><a name="slots" class="anchor-navigation-ex-anchor" href="#slots"><i class="fa fa-link" aria-hidden="true"></i></a><a name="slots" class="plugin-anchor" href="#slots"><i class="fa fa-link" aria-hidden="true"></i></a>Slots</h3>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">&#x540D;&#x79F0;</th>
-<th style="text-align:center">&#x8BF4;&#x660E;</th>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x8BF4;&#x660E;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">leftFooter</td>
-<td style="text-align:center">PageFooter&#x5DE6;&#x4FA7;&#x533A;&#x57DF;</td>
-</tr>
-<tr>
-<td style="text-align:center">rightFooter</td>
-<td style="text-align:center">PageFooter&#x53F3;&#x4FA7;&#x533A;&#x57DF;</td>
-</tr>
-<tr>
-<td style="text-align:center">leftFooter</td>
-<td style="text-align:center">PageFooter&#x5B57;&#x4F53;&#x5185;&#x5BB9;</td>
-</tr>
-<tr>
-<td style="text-align:center">default</td>
-<td style="text-align:center">&#x4E3B;&#x4F53;&#x533A;&#x57DF;</td>
-</tr>
-</tbody>
-</table>
-<h3 id="pagefooter"><a name="pagefooter" class="anchor-navigation-ex-anchor" href="#pagefooter"><i class="fa fa-link" aria-hidden="true"></i></a><a name="pagefooter" class="plugin-anchor" href="#pagefooter"><i class="fa fa-link" aria-hidden="true"></i></a>PageFooter</h3>
-<p>&#x7528;&#x4E8E;&#x9875;&#x9762;&#x5E95;&#x90E8;&#x5DE5;&#x5177;&#x680F;<br></p>
-<h4 id="&#x7528;&#x6CD5;&#xFF1A;_1"><a name="&#x7528;&#x6CD5;&#xFF1A;_1" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x6CD5;&#xFF1A;_1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7528;&#x6CD5;&#xFF1A;" class="plugin-anchor" href="#&#x7528;&#x6CD5;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7528;&#x6CD5;&#xFF1A;</h4>
-<pre><code class="lang-vue">&lt;template&gt;
-  &lt;div&gt;
-    &lt;PageFooter&gt;
-      &lt;template #left&gt;left&lt;/template&gt;
-      &lt;template #right&gt;right&lt;/template&gt;
-    &lt;/PageFooter&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
-&lt;script&gt;
-  import { PageFooter } from &apos;/@/components/Page&apos;;
-  import { defineComponent } from &apos;vue&apos;;
-  export default defineComponent({
-    components: { PageFooter },
-    setup() {
-      return {};
-    },
-  });
-&lt;/script&gt;
-</code></pre>
-<h4 id="slots_1"><a name="slots_1" class="anchor-navigation-ex-anchor" href="#slots_1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="slots" class="plugin-anchor" href="#slots"><i class="fa fa-link" aria-hidden="true"></i></a>Slots</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">&#x540D;&#x79F0;</th>
-<th style="text-align:center">&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">left</td>
-<td style="text-align:center">&#x5DE6;&#x4FA7;&#x533A;&#x57DF;</td>
-</tr>
-<tr>
-<td style="text-align:center">right</td>
-<td style="text-align:center">&#x53F3;&#x4FA7;&#x533A;&#x57DF;</td>
+<td>default</td>
+<td>&#x9ED8;&#x8BA4;&#x63D2;&#x69FD;</td>
 </tr>
 </tbody>
 </table>
@@ -725,12 +700,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 常用组件">
+                <a href="Transition.html" class="navigation navigation-prev " aria-label="Previous page: Transition">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Icon.html" class="navigation navigation-next " aria-label="Next page: Icon">
+                <a href="../../package/" class="navigation navigation-next " aria-label="Next page: 打包构建">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -741,7 +716,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"page","level":"1.8.2.1","depth":3,"next":{"title":"Icon","level":"1.8.2.2","depth":3,"path":"components/commonly/Icon.md","ref":"components/commonly/Icon.md","articles":[]},"previous":{"title":"常用组件","level":"1.8.2","depth":2,"path":"components/commonly/README.md","ref":"components/commonly/README.md","articles":[{"title":"page","level":"1.8.2.1","depth":3,"path":"components/commonly/Page.md","ref":"components/commonly/Page.md","articles":[]},{"title":"Icon","level":"1.8.2.2","depth":3,"path":"components/commonly/Icon.md","ref":"components/commonly/Icon.md","articles":[]},{"title":"Authority","level":"1.8.2.3","depth":3,"path":"components/commonly/Authority.md","ref":"components/commonly/Authority.md","articles":[]},{"title":"Form","level":"1.8.2.4","depth":3,"path":"components/commonly/Form.md","ref":"components/commonly/Form.md","articles":[]},{"title":"Table","level":"1.8.2.5","depth":3,"path":"components/commonly/Table.md","ref":"components/commonly/Table.md","articles":[]},{"title":"PopConfirmButton","level":"1.8.2.6","depth":3,"path":"components/commonly/PopConfirmButton.md","ref":"components/commonly/PopConfirmButton.md","articles":[]},{"title":"CollapseContainer","level":"1.8.2.7","depth":3,"path":"components/commonly/CollapseContainer.md","ref":"components/commonly/CollapseContainer.md","articles":[]},{"title":"ScrollContainer","level":"1.8.2.8","depth":3,"path":"components/commonly/ScrollContainer.md","ref":"components/commonly/ScrollContainer.md","articles":[]},{"title":"LazyContainer","level":"1.8.2.9","depth":3,"path":"components/commonly/LazyContainer.md","ref":"components/commonly/LazyContainer.md","articles":[]},{"title":"CountTo","level":"1.8.2.10","depth":3,"path":"components/commonly/CountTo.md","ref":"components/commonly/CountTo.md","articles":[]},{"title":"Drawer","level":"1.8.2.11","depth":3,"path":"components/commonly/Drawer.md","ref":"components/commonly/Drawer.md","articles":[]},{"title":"Model","level":"1.8.2.12","depth":3,"path":"components/commonly/Model.md","ref":"components/commonly/Model.md","articles":[]},{"title":"Tree","level":"1.8.2.13","depth":3,"path":"components/commonly/Tree.md","ref":"components/commonly/Tree.md","articles":[]},{"title":"Qrcode","level":"1.8.2.14","depth":3,"path":"components/commonly/Qrcode.md","ref":"components/commonly/Qrcode.md","articles":[]},{"title":"Tinymce","level":"1.8.2.15","depth":3,"path":"components/commonly/Tinymce.md","ref":"components/commonly/Tinymce.md","articles":[]},{"title":"Transition","level":"1.8.2.16","depth":3,"path":"components/commonly/Transition.md","ref":"components/commonly/Transition.md","articles":[]},{"title":"VirtualScroll","level":"1.8.2.17","depth":3,"path":"components/commonly/VirtualScroll.md","ref":"components/commonly/VirtualScroll.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","sharing-plus","anchor-navigation-ex","favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/liuya6"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{},"github-buttons":{"buttons":[{"user":"liuya6","repo":"admin-template","size":"small"}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"harlan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"admin-doc","language":"zh-hans","gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"components/commonly/Page.md","mtime":"2022-05-07T10:38:03.667Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-09T10:43:45.276Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"VirtualScroll","level":"1.8.2.17","depth":3,"next":{"title":"打包构建","level":"1.9","depth":1,"path":"package/README.md","ref":"package/README.md","articles":[]},"previous":{"title":"Transition","level":"1.8.2.16","depth":3,"path":"components/commonly/Transition.md","ref":"components/commonly/Transition.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","sharing-plus","anchor-navigation-ex","favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/liuya6"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{},"github-buttons":{"buttons":[{"user":"liuya6","repo":"admin-template","size":"small"}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"harlan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"admin-doc","language":"zh-hans","gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"components/commonly/VirtualScroll.md","mtime":"2022-05-09T09:59:17.334Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-09T10:43:45.276Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

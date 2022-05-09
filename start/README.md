@@ -27,9 +27,13 @@ node -v
 ```
 > 如果你需要同时存在多个 node 版本，可以使用 [n](https://github.com/tj/n) 或者其他工具([nvm](https://github.com/nvm-sh/nvm))进行 Node.js 进行版本管理。
 
-###### 安装依赖 <br/>
+###### 安装依赖
 
 必须使用[pnpm](https://www.pnpm.cn/)进行依赖安装<br/>
+
+```
+pnpm install
+```
 
 如果未安装[pnpm](https://www.pnpm.cn/)，可以用下面命令来进行全局安装
 
@@ -42,6 +46,11 @@ npm install -g pnpm@next-7
 #升级
 一旦安装完 pnpm 之后，就无需使用其它软件包管理器来更新 pnpm 了。 你可以让 pnpm 自己来更新自己，如下所示：
 pnpm add -g pnpm
+```
+
+###### 项目启动
+```
+pnpm serve 
 ```
 
 ### npm script

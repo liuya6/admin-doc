@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>page · admin-doc</title>
+        <title>PopConfirmButton · admin-doc</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -75,10 +75,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Icon.html" />
+    <link rel="next" href="CollapseContainer.html" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="Table.html" />
     
 
     
@@ -255,7 +255,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.8.2.1" data-path="Page.html">
+        <li class="chapter " data-level="1.8.2.1" data-path="Page.html">
             
                 <a href="Page.html">
             
@@ -320,7 +320,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2.6" data-path="PopConfirmButton.html">
+        <li class="chapter active" data-level="1.8.2.6" data-path="PopConfirmButton.html">
             
                 <a href="PopConfirmButton.html">
             
@@ -529,7 +529,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >page</a>
+        <a href="../.." >PopConfirmButton</a>
     </h1>
 </div>
 
@@ -544,31 +544,22 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#page"><b></b>Page</a></li><li><span class="title-icon "></span><a href="#pagewrapper"><b></b>PageWrapper</a></li><li><span class="title-icon "></span><a href="#pagefooter"><b></b>PageFooter</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h3 id="page"><a name="page" class="anchor-navigation-ex-anchor" href="#page"><i class="fa fa-link" aria-hidden="true"></i></a><a name="page" class="plugin-anchor" href="#page"><i class="fa fa-link" aria-hidden="true"></i></a>Page</h3>
-<p>&#x9875;&#x9762;&#x76F8;&#x5173;&#x7EC4;&#x4EF6;</p>
-<h3 id="pagewrapper"><a name="pagewrapper" class="anchor-navigation-ex-anchor" href="#pagewrapper"><i class="fa fa-link" aria-hidden="true"></i></a><a name="pagewrapper" class="plugin-anchor" href="#pagewrapper"><i class="fa fa-link" aria-hidden="true"></i></a>PageWrapper</h3>
-<p>&#x7528;&#x4E8E;&#x5305;&#x88F9;&#x9875;&#x9762;&#x7EC4;&#x4EF6; <br></p>
-<h4 id="&#x7528;&#x6CD5;&#xFF1A;"><a name="&#x7528;&#x6CD5;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x6CD5;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7528;&#x6CD5;&#xFF1A;" class="plugin-anchor" href="#&#x7528;&#x6CD5;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7528;&#x6CD5;&#xFF1A;</h4>
-<pre><code class="lang-vue">&lt;template&gt;
-  &lt;div&gt;
-    &lt;PageWrapper&gt;
-      &lt;template #left&gt;left&lt;/template&gt;
-      &lt;template #right&gt;right&lt;/template&gt;
-    &lt;/PageWrapper&gt;
-  &lt;/div&gt;
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#popconfirmbutton-&#x6309;&#x94AE;"><b></b>PopConfirmButton &#x6309;&#x94AE;</a></li><li><span class="title-icon "></span><a href="#&#x7528;&#x6CD5;"><b></b>&#x7528;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#props"><b></b>Props</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h3 id="popconfirmbutton-&#x6309;&#x94AE;"><a name="popconfirmbutton-&#x6309;&#x94AE;" class="anchor-navigation-ex-anchor" href="#popconfirmbutton-&#x6309;&#x94AE;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="popconfirmbutton-&#x6309;&#x94AE;" class="plugin-anchor" href="#popconfirmbutton-&#x6309;&#x94AE;"><i class="fa fa-link" aria-hidden="true"></i></a>PopConfirmButton &#x6309;&#x94AE;</h3>
+<p>&#x5E26;&#x6709; PopConfirm &#x4E0B;&#x62C9;&#x83DC;&#x5355;&#x529F;&#x80FD;&#x7684;&#x6309;&#x94AE;</p>
+<h3 id="&#x7528;&#x6CD5;"><a name="&#x7528;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7528;&#x6CD5;" class="plugin-anchor" href="#&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7528;&#x6CD5;</h3>
+<pre><code>&lt;template&gt;
+  &lt;PopConfirmButton&gt;&#x6309;&#x94AE;&#x6587;&#x672C;&lt;/PopConfirmButton&gt;
 &lt;/template&gt;
+
 &lt;script&gt;
-  import { PageWrapper } from &apos;/@/components/Page&apos;;
   import { defineComponent } from &apos;vue&apos;;
+  import { PopConfirmButton } from &apos;/@/components/Button&apos;;
   export default defineComponent({
-    components: { PageWrapper },
-    setup() {
-      return {};
-    },
+    components: { PopConfirmButton },
   });
 &lt;/script&gt;
-</code></pre>
-<h4 id="props"><a name="props" class="anchor-navigation-ex-anchor" href="#props"><i class="fa fa-link" aria-hidden="true"></i></a><a name="props" class="plugin-anchor" href="#props"><i class="fa fa-link" aria-hidden="true"></i></a>props</h4>
+</code></pre><h3 id="props"><a name="props" class="anchor-navigation-ex-anchor" href="#props"><i class="fa fa-link" aria-hidden="true"></i></a><a name="props" class="plugin-anchor" href="#props"><i class="fa fa-link" aria-hidden="true"></i></a>Props</h3>
+<p>&#x4FDD;&#x6301; anv design popconfirm &#x7EC4;&#x4EF6; &#x539F;&#x6709;&#x529F;&#x80FD;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x6269;&#x5C55;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;</p>
 <table>
 <thead>
 <tr>
@@ -580,121 +571,10 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">title</td>
-<td style="text-align:center"><code>string</code></td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">pageHeader title</td>
-</tr>
-<tr>
-<td style="text-align:center">dense</td>
-<td style="text-align:center"><code>boolean</code></td>
-<td style="text-align:center"><code>false</code></td>
-<td style="text-align:center">&#x662F;&#x5426;&#x7F29;&#x5C0F;&#x4E3B;&#x4F53;&#x533A;&#x57DF;,&#x4E3A; true &#x5C06;&#x4F1A;&#x53D6;&#x6D88; padding/margin</td>
-</tr>
-<tr>
-<td style="text-align:center">content</td>
-<td style="text-align:center"><code>string</code></td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">pageHeader Content &#x5185;&#x5BB9;</td>
-</tr>
-<tr>
-<td style="text-align:center">contentStyle</td>
-<td style="text-align:center"><code>object</code></td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">&#x4E3B;&#x9898;&#x533A;&#x57DF;&#x6837;&#x5F0F;</td>
-</tr>
-<tr>
-<td style="text-align:center">contentClass</td>
-<td style="text-align:center"><code>string</code></td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">&#x4E3B;&#x9898;&#x533A;&#x57DF;class</td>
-</tr>
-<tr>
-<td style="text-align:center">contentBackground</td>
-<td style="text-align:center"><code>boolean</code></td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">&#x4E3B;&#x9898;&#x533A;&#x57DF;&#x80CC;&#x666F;</td>
-</tr>
-<tr>
-<td style="text-align:center">contentFullHeight</td>
-<td style="text-align:center"><code>boolean</code></td>
-<td style="text-align:center"><code>false</code></td>
-<td style="text-align:center">&#x4E3B;&#x4F53;&#x533A;&#x57DF;&#x662F;&#x5426;&#x5360;&#x6EE1;&#x6574;&#x4E2A;&#x5C4F;&#x5E55;&#x9AD8;&#x5EA6;</td>
-</tr>
-<tr>
-<td style="text-align:center">fixedHeight</td>
-<td style="text-align:center"><code>boolean</code></td>
-<td style="text-align:center"><code>false</code></td>
-<td style="text-align:center">&#x56FA;&#x5B9A;&#x4E3B;&#x4F53;&#x533A;&#x57DF;&#x9AD8;&#x5EA6;</td>
-</tr>
-</tbody>
-</table>
-<h4 id="slots"><a name="slots" class="anchor-navigation-ex-anchor" href="#slots"><i class="fa fa-link" aria-hidden="true"></i></a><a name="slots" class="plugin-anchor" href="#slots"><i class="fa fa-link" aria-hidden="true"></i></a>Slots</h4>
-<p>pageHeader &#x7684; slot &#x90FD;&#x652F;&#x6301;</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">&#x540D;&#x79F0;</th>
-<th style="text-align:center">&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">leftFooter</td>
-<td style="text-align:center">PageFooter&#x5DE6;&#x4FA7;&#x533A;&#x57DF;</td>
-</tr>
-<tr>
-<td style="text-align:center">rightFooter</td>
-<td style="text-align:center">PageFooter&#x53F3;&#x4FA7;&#x533A;&#x57DF;</td>
-</tr>
-<tr>
-<td style="text-align:center">leftFooter</td>
-<td style="text-align:center">PageFooter&#x5B57;&#x4F53;&#x5185;&#x5BB9;</td>
-</tr>
-<tr>
-<td style="text-align:center">default</td>
-<td style="text-align:center">&#x4E3B;&#x4F53;&#x533A;&#x57DF;</td>
-</tr>
-</tbody>
-</table>
-<h3 id="pagefooter"><a name="pagefooter" class="anchor-navigation-ex-anchor" href="#pagefooter"><i class="fa fa-link" aria-hidden="true"></i></a><a name="pagefooter" class="plugin-anchor" href="#pagefooter"><i class="fa fa-link" aria-hidden="true"></i></a>PageFooter</h3>
-<p>&#x7528;&#x4E8E;&#x9875;&#x9762;&#x5E95;&#x90E8;&#x5DE5;&#x5177;&#x680F;<br></p>
-<h4 id="&#x7528;&#x6CD5;&#xFF1A;_1"><a name="&#x7528;&#x6CD5;&#xFF1A;_1" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x6CD5;&#xFF1A;_1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7528;&#x6CD5;&#xFF1A;" class="plugin-anchor" href="#&#x7528;&#x6CD5;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7528;&#x6CD5;&#xFF1A;</h4>
-<pre><code class="lang-vue">&lt;template&gt;
-  &lt;div&gt;
-    &lt;PageFooter&gt;
-      &lt;template #left&gt;left&lt;/template&gt;
-      &lt;template #right&gt;right&lt;/template&gt;
-    &lt;/PageFooter&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
-&lt;script&gt;
-  import { PageFooter } from &apos;/@/components/Page&apos;;
-  import { defineComponent } from &apos;vue&apos;;
-  export default defineComponent({
-    components: { PageFooter },
-    setup() {
-      return {};
-    },
-  });
-&lt;/script&gt;
-</code></pre>
-<h4 id="slots_1"><a name="slots_1" class="anchor-navigation-ex-anchor" href="#slots_1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="slots" class="plugin-anchor" href="#slots"><i class="fa fa-link" aria-hidden="true"></i></a>Slots</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">&#x540D;&#x79F0;</th>
-<th style="text-align:center">&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">left</td>
-<td style="text-align:center">&#x5DE6;&#x4FA7;&#x533A;&#x57DF;</td>
-</tr>
-<tr>
-<td style="text-align:center">right</td>
-<td style="text-align:center">&#x53F3;&#x4FA7;&#x533A;&#x57DF;</td>
+<td style="text-align:center">enable</td>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">true</td>
+<td style="text-align:center">&#x662F;&#x5426;&#x542F;&#x7528;&#x4E0B;&#x62C9;&#x83DC;&#x5355;&#xFF0C;&#x4E3A; false &#x5219;&#x663E;&#x793A;&#x9ED8;&#x8BA4;&#x6309;&#x94AE;</td>
 </tr>
 </tbody>
 </table>
@@ -725,12 +605,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 常用组件">
+                <a href="Table.html" class="navigation navigation-prev " aria-label="Previous page: Table">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Icon.html" class="navigation navigation-next " aria-label="Next page: Icon">
+                <a href="CollapseContainer.html" class="navigation navigation-next " aria-label="Next page: CollapseContainer">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -741,7 +621,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"page","level":"1.8.2.1","depth":3,"next":{"title":"Icon","level":"1.8.2.2","depth":3,"path":"components/commonly/Icon.md","ref":"components/commonly/Icon.md","articles":[]},"previous":{"title":"常用组件","level":"1.8.2","depth":2,"path":"components/commonly/README.md","ref":"components/commonly/README.md","articles":[{"title":"page","level":"1.8.2.1","depth":3,"path":"components/commonly/Page.md","ref":"components/commonly/Page.md","articles":[]},{"title":"Icon","level":"1.8.2.2","depth":3,"path":"components/commonly/Icon.md","ref":"components/commonly/Icon.md","articles":[]},{"title":"Authority","level":"1.8.2.3","depth":3,"path":"components/commonly/Authority.md","ref":"components/commonly/Authority.md","articles":[]},{"title":"Form","level":"1.8.2.4","depth":3,"path":"components/commonly/Form.md","ref":"components/commonly/Form.md","articles":[]},{"title":"Table","level":"1.8.2.5","depth":3,"path":"components/commonly/Table.md","ref":"components/commonly/Table.md","articles":[]},{"title":"PopConfirmButton","level":"1.8.2.6","depth":3,"path":"components/commonly/PopConfirmButton.md","ref":"components/commonly/PopConfirmButton.md","articles":[]},{"title":"CollapseContainer","level":"1.8.2.7","depth":3,"path":"components/commonly/CollapseContainer.md","ref":"components/commonly/CollapseContainer.md","articles":[]},{"title":"ScrollContainer","level":"1.8.2.8","depth":3,"path":"components/commonly/ScrollContainer.md","ref":"components/commonly/ScrollContainer.md","articles":[]},{"title":"LazyContainer","level":"1.8.2.9","depth":3,"path":"components/commonly/LazyContainer.md","ref":"components/commonly/LazyContainer.md","articles":[]},{"title":"CountTo","level":"1.8.2.10","depth":3,"path":"components/commonly/CountTo.md","ref":"components/commonly/CountTo.md","articles":[]},{"title":"Drawer","level":"1.8.2.11","depth":3,"path":"components/commonly/Drawer.md","ref":"components/commonly/Drawer.md","articles":[]},{"title":"Model","level":"1.8.2.12","depth":3,"path":"components/commonly/Model.md","ref":"components/commonly/Model.md","articles":[]},{"title":"Tree","level":"1.8.2.13","depth":3,"path":"components/commonly/Tree.md","ref":"components/commonly/Tree.md","articles":[]},{"title":"Qrcode","level":"1.8.2.14","depth":3,"path":"components/commonly/Qrcode.md","ref":"components/commonly/Qrcode.md","articles":[]},{"title":"Tinymce","level":"1.8.2.15","depth":3,"path":"components/commonly/Tinymce.md","ref":"components/commonly/Tinymce.md","articles":[]},{"title":"Transition","level":"1.8.2.16","depth":3,"path":"components/commonly/Transition.md","ref":"components/commonly/Transition.md","articles":[]},{"title":"VirtualScroll","level":"1.8.2.17","depth":3,"path":"components/commonly/VirtualScroll.md","ref":"components/commonly/VirtualScroll.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","sharing-plus","anchor-navigation-ex","favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/liuya6"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{},"github-buttons":{"buttons":[{"user":"liuya6","repo":"admin-template","size":"small"}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"harlan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"admin-doc","language":"zh-hans","gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"components/commonly/Page.md","mtime":"2022-05-07T10:38:03.667Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-09T10:43:45.276Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"PopConfirmButton","level":"1.8.2.6","depth":3,"next":{"title":"CollapseContainer","level":"1.8.2.7","depth":3,"path":"components/commonly/CollapseContainer.md","ref":"components/commonly/CollapseContainer.md","articles":[]},"previous":{"title":"Table","level":"1.8.2.5","depth":3,"path":"components/commonly/Table.md","ref":"components/commonly/Table.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","sharing-plus","anchor-navigation-ex","favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/liuya6"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{},"github-buttons":{"buttons":[{"user":"liuya6","repo":"admin-template","size":"small"}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"harlan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"admin-doc","language":"zh-hans","gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"components/commonly/PopConfirmButton.md","mtime":"2022-05-09T07:06:35.438Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-09T10:43:45.276Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
